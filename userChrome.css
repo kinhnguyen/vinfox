@@ -1,0 +1,187 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#titlebar  {
+/*     display: none; */
+/*     z-index: !important; */
+}
+
+#navigator-toolbox {
+/*     padding-bottom: 5px; */
+/*     background: linear-gradient(white, gray); */
+}
+
+#titlebar toolbarbutton {
+    margin-top: -5px !important;
+    height: 10px !important;
+}
+
+#titlebar stack {
+/*     height: 20px!important;
+    background-color: red; */
+}
+
+#titlebar tab hbox {
+    height: 22px;
+/*     background-color: red; */
+}
+
+#titlebar tab image {
+    height: 12px!important;
+    width: 12px!important;
+}
+
+hbox.titlebar-buttonbox-container {
+    overflow: hidden;
+    position: absolute;
+}
+
+#nav-bar {
+/*     display: none; */
+/*     margin-top: -45px; */
+/*     padding-bottom: 22px; */
+}
+
+#navigator-toolbox {
+  border-bottom: 0px !important;
+}
+
+
+
+#nav-bar toolbaritem {
+    max-height: 22px !important;
+}
+
+
+#nav-bar toolbarbutton stack .toolbarbutton-icon {
+    height: 10px!important;
+    width: 10px!important;
+}
+
+#nav-bar toolbarspring {
+    display: none;
+}
+
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content {
+    height: 22.4px;
+}
+
+#TabsToolbar:hover{
+    background: transparent;
+}
+
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+    display: none !important;
+}
+
+.toolbar-items {
+    margin-bottom: -6px !important;
+}
+
+.tab-line {
+      display: none;
+}
+
+.tab-bottom-line {
+    display:none!important;
+}
+
+.titlebar-buttonbox-container{
+    padding-right: 10px;
+}
+
+#urlbar-container *:not(#identity-box) {
+     border: 0px!important;
+}
+
+#urlbar-input-container {
+    padding-left: 10px !important;
+    margin-top: 0px!important;
+}
+
+#urlbar {
+    top: -3.5px!important;
+    font-size: 1.1em!important;
+    color: gray !important;
+    border: red solid 0px!important;
+}
+
+#tracking-protection-icon-container {
+    display: none!important;
+}
+
+#urlbar image {
+    display: none;
+}
+
+#urlbar, #searchbar {
+    min-height: 10!important;
+}
+
+#identity-box {
+    display: none;
+}
+
+#urlbar-background 
+{
+/*     background: transparent !important; */
+}
+
+#urlbar[breakout] > #urlbar-input-container {
+    width: 100%;
+/*     height: 56px; */
+}
+
+#urlbar[breakout][breakout-extend],
+#urlbar[breakout][breakout-extend-disabled][open] {
+    z-index: 9999;
+    font-size: 1.2em !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+    top: +144px !important;
+    width: 90%!important;
+    margin: 0 auto!important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+/*     box-shadow: 0 5px 18px rgba(5, 0, 0, .2); */
+/*     background: white !important; */
+}
+
+@keyframes urlbar-grow {
+    0% {
+        transform: scaleX(.99) scaleY(.95);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  animation-name: urlbar-grow;
+  animation-duration: 5s;
+  animation-timing-function: var(--animation-easing-function);
+  background: #FDFFFF !important;
+}
+
+:root[uidensity="compact"] #urlbar, :root[uidensity="compact"] #searchbar {
+    min-height: 0;
+}
+
+
+#pageActionSeparator {
+    display: none !important;
+}
+
+#pocket-button {
+    display: none;
+}
+
+.titlebar-spacer[type="pre-tabs"],
+.titlebar-spacer[type="post-tabs"] {
+    display: none !important;
+}
